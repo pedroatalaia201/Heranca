@@ -15,5 +15,15 @@ namespace Aula126.Entities {
         public void UpdateBalance() {
             Balance += Balance * InterestRate;
         }
+        /*
+        //override sobescreve o método;
+        public override void Withdraw(double amount) {
+            Balance -= amount;
+        }
+        */
+        public override void Withdraw(double amount) {
+            base.Withdraw(amount);
+            Balance -= 2.0;
+        }
     }
 }

@@ -17,8 +17,8 @@ namespace Aula126.Entities {
             Holder = holder;
             Balance = balance;
         }
-
-        public void Withdraw(double amount) {
+        //virtual permite que o método seja sobrescrito;
+        public virtual void Withdraw(double amount) {
             Balance -= amount + 5.00;
         }
 
