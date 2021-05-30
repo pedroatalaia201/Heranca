@@ -1,7 +1,7 @@
 ﻿using System;
 
 namespace Aula126.Entities {
-    class SavingAccount : Account {
+    sealed class SavingAccount : Account {
         public double InterestRate { get; set; }
 
         public SavingAccount() {
