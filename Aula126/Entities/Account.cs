@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Aula126.Entities {
-    class Account {
+    abstract class Account {
         public int Number { get; private set; }
         public string Holder { get; private set; }
         public double Balance { get; protected set; }
